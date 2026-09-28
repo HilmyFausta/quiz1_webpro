@@ -464,6 +464,12 @@ section.content {
   object-fit: cover;
 }
 
+/* profile photo with 3:4 portrait ratio */
+.profile-photo {
+  aspect-ratio: 3 / 4;
+  max-width: 100%;
+}
+
 .icon-badge-overlay {
   position: absolute;
   top: 12px;
