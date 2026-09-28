@@ -89,6 +89,7 @@ img, svg {
   top: 0;
   z-index: 50;
   padding: 18px 0;
+  background: var(--color-sky);
 }
 
 .nav-bar {
@@ -207,6 +208,7 @@ img, svg {
   overflow: hidden;
   padding-top: 86px;
   background: #BDEBF5;
+  background: var(--color-sky);
 }
 
 .hero-scene {
@@ -220,6 +222,7 @@ img, svg {
 .hero-scene svg {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 .hero-inner {
@@ -302,8 +305,12 @@ img, svg {
 }
 
 .page-header .hero-scene svg {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
 }
 
 .sr-only {
@@ -324,7 +331,6 @@ img, svg {
     aspect-ratio: auto;
     min-height: 0;
     height: 230px;
-    margin-top: -96px;
   }
   .page-header .hero-scene svg {
     position: absolute;
@@ -618,7 +624,7 @@ section.content {
     display: flex;
     align-items: center;
     padding: 100px 0 40px;
-    background: #BDEBF5;
+    background: var(--color-sky);
   }
 
   .hero .hero-scene {
@@ -632,6 +638,7 @@ section.content {
   .hero .hero-scene svg {
     width: 100%;
     height: 100%;
+    display: block;
   }
 
   .hero-inner {
