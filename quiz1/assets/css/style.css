@@ -222,6 +222,8 @@ img, svg {
 .hero-scene svg {
   width: 100%;
   height: 100%;
+  object-fit: cover;       /* Otomatis men-zoom gambar agar memenuhi container tanpa melar */
+  object-position: bottom center; /* Menjangkar gambar ke bawah, agar laut dan pasir jadi prioritas tampil */
   display: block;
 }
 
@@ -308,9 +310,9 @@ img, svg {
   position: absolute;
   left: 0;
   bottom: -1px;
-  width: 100%;
+  /* width: 100%;
   height: auto;
-  display: block;
+  display: block; */
 }
 
 .sr-only {
@@ -332,13 +334,13 @@ img, svg {
     min-height: 0;
     height: 230px;
   }
-  .page-header .hero-scene svg {
+  /* .page-header .hero-scene svg {
     position: absolute;
     left: 0;
     bottom: -1px;
     width: 100%;
     height: auto;
-  }
+  } */
 }
 
 .header-card {
@@ -622,8 +624,8 @@ section.content {
     height: auto;
     aspect-ratio: auto;
     display: flex;
-    align-items: center;
-    padding: 100px 0 40px;
+    align-items: flex-start; /* Geser card ke atas (tidak lagi di center) */
+    padding: 120px 0 160px;
     background: var(--color-sky);
   }
 
