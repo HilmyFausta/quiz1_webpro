@@ -307,7 +307,16 @@ img, svg {
 @media (max-width: 720px) {
   .page-header {
     aspect-ratio: auto;
-    min-height: 420px;
+    min-height: 0;
+    height: 230px;
+    margin-top: -96px;
+  }
+  .page-header .hero-scene svg {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: auto;
   }
 }
 
