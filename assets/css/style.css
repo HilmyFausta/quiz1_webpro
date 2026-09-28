@@ -269,10 +269,20 @@ img, svg {
 
 .page-header {
   position: relative;
-  padding: 130px 0 70px 0;
-  text-align: center;
-  overflow: hidden;
   margin-top: -86px;
+  min-height: 260px;
+  aspect-ratio: 1440 / 320;
+  overflow: hidden;
+  background: #BDEBF5;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
 }
 
 .page-header .hero-scene { opacity: 0.9; }
@@ -345,6 +355,34 @@ section.content {
 
 .card p {
   margin-bottom: 0;
+}
+
+.card-link {
+  display: block;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card-link:hover,
+.card-link:focus-visible {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(27, 110, 140, 0.22);
+}
+
+.card-link:focus-visible {
+  outline: 3px solid var(--color-coral);
+  outline-offset: 3px;
+}
+
+.card-more {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 800;
+  color: var(--color-sea-deep);
+}
+
+.card-link:hover .card-more {
+  color: var(--color-coral);
 }
 
 .card .icon {
