@@ -27,7 +27,7 @@
   --font-heading: 'Baloo 2', sans-serif;
   --font-body: 'Nunito', sans-serif;
 
-  --max-width: 1080px;
+  --max-width: 1400px;
 }
 
 * {
@@ -405,7 +405,7 @@ section.content {
 .card-grid {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 24px;
 }
 
