@@ -293,12 +293,12 @@ img, svg {
 
 .page-header {
   position: relative;
-  min-height: 260px;
+  min-height: 400px;
   aspect-ratio: 1440 / 320;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  background: var(--color-sand);
+  padding-top: 86px;
+  box-sizing: content-box;
+  background: #BDEBF5;
 }
 
 .page-header .hero-scene {
@@ -333,7 +333,9 @@ img, svg {
     aspect-ratio: auto;
     min-height: 0;
     display: block;
-    background: var(--color-sand);
+    background: var(--color-sky);
+    padding-top: 86px;
+    box-sizing: content-box;
   }
 
   .page-header .hero-scene {
