@@ -223,8 +223,8 @@ img, svg {
 .hero-scene svg {
   width: 100%;
   height: 100%;
-  object-fit: cover;       /* Otomatis men-zoom gambar agar memenuhi container tanpa melar */
-  object-position: bottom center; /* Menjangkar gambar ke bawah, agar laut dan pasir jadi prioritas tampil */
+  object-fit: cover;
+  object-position: center center;
   display: block;
 }
 
