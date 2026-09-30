@@ -1,10 +1,6 @@
-/* ===========================================================
-   Personal site - Tuban Coastal Theme
-   Design system: tokens, navigation, hero, cards, and layout
-   =========================================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap');
 
+/* palet warna, font, dan ukuran*/
 :root {
   --color-sea-deep: #1B6E8C;
   --color-sea: #3AAED8;
@@ -16,24 +12,20 @@
   --color-cream: #FFFBF3;
   --color-ink: #2E3A3F;
   --color-ink-soft: #5B6B6F;
-
   --radius-lg: 28px;
   --radius-md: 18px;
   --radius-pill: 999px;
-
   --shadow-soft: 0 10px 24px rgba(27, 110, 140, 0.14);
   --shadow-tight: 0 4px 10px rgba(27, 110, 140, 0.10);
-
   --font-heading: 'Baloo 2', sans-serif;
   --font-body: 'Nunito', sans-serif;
-
   --max-width: 1400px;
 }
 
+/* reset dasar dan gaya umum*/
 * {
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -82,8 +74,7 @@ img, svg {
   z-index: 2;
 }
 
-/* ---------- Navigation ---------- */
-
+/* navigasi */
 .site-header {
   position: absolute;
   width: 100%;
@@ -163,19 +154,17 @@ img, svg {
   color: var(--color-cream);
 }
 
+/* versi mobile (hp) */
 @media (max-width: 720px) {
   .site-header {
     padding: 12px 12px;
   }
-
   .nav-bar {
     padding: 10px 14px;
   }
-
   .nav-toggle {
     display: block;
   }
-
   .nav-links {
     position: absolute;
     top: calc(100% + 8px);
@@ -188,18 +177,15 @@ img, svg {
     padding: 10px;
     display: none;
   }
-
   .nav-links.is-open {
     display: flex;
   }
-
   .nav-links a {
     text-align: center;
   }
 }
 
-/* ---------- Full-bleed beach hero ---------- */
-
+/* untuk hero sprite elemen */
 .hero {
   position: relative;
   min-height: 400px;
@@ -289,8 +275,7 @@ img, svg {
   border: 2px solid var(--color-sea-deep);
 }
 
-/* ---------- Inner page header (smaller hero) ---------- */
-
+/* hero yang kecil */
 .page-header {
   position: relative;
   min-height: 400px;
@@ -376,8 +361,7 @@ img, svg {
   margin: 0 auto;
 }
 
-/* ---------- General sections ---------- */
-
+/* bagian umum */
 section.content {
   position: relative;
   padding: 60px 0;
@@ -388,7 +372,7 @@ section.content {
   margin-bottom: 36px;
 }
 
-/* decorative sea-floor critters, purely visual */
+/* decoratif laut dll */
 .decor {
   position: absolute;
   opacity: 0.9;
@@ -400,8 +384,7 @@ section.content {
   .decor { display: none; }
 }
 
-/* ---------- Cards ---------- */
-
+/* buat kartu */
 .card-grid {
   position: relative;
   display: grid;
@@ -458,7 +441,7 @@ section.content {
   margin-bottom: 12px;
 }
 
-/* photo frame used for placeholder / real photos */
+/* frame foto */
 .photo-frame {
   position: relative;
   border-radius: var(--radius-md);
@@ -474,7 +457,7 @@ section.content {
   object-fit: cover;
 }
 
-/* profile photo with 3:4 portrait ratio */
+/* foto profile */
 .profile-photo {
   aspect-ratio: 3 / 4;
   max-width: 280px;
@@ -507,8 +490,7 @@ section.content {
   height: 22px;
 }
 
-/* ---------- Info / bio layout ---------- */
-
+/* infromasi / bio */
 .info-block {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -553,8 +535,7 @@ section.content {
   min-width: 150px;
 }
 
-/* ---------- Experience timeline (profile page) ---------- */
-
+/* timeline buat profile */
 .timeline {
   list-style: none;
   margin: 0;
@@ -598,8 +579,7 @@ section.content {
   margin: 4px 0 0 0;
 }
 
-/* ---------- Footer ---------- */
-
+/* footer */
 .site-footer {
   background: var(--color-sea-deep);
   color: var(--color-cream);
@@ -643,6 +623,7 @@ section.content {
   }
 }
 
+/* handle pemandangan hp */
 @media (max-width: 720px) {
   .hero {
     height: auto;
